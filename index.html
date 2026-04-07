@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astha-Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══ NAV ══════════════════════════════════════════════ -->
+<nav>
+  <div class="nav-logo">ASTHA.</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#article">Articles</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#register">Register</a></li>
+  </ul>
+</nav>
+
+<!-- ═══ HERO ══════════════════════════════════════════════ -->
+<section id="home">
+  <p class="hero-eyebrow">👋 Welcome to my portfolio</p>
+  <h1 class="hero-name">Hi, I'm<br><span>Astha</span></h1>
+  <p class="hero-role"><strong>DevOps Engineer</strong> &nbsp;·&nbsp; System Engineer &nbsp;·&nbsp; Security Enthusiast</p>
+  <p class="hero-desc">
+    Designing, automating, and securing infrastructure with 2.6 years of
+    hands-on experience in AWS, Linux systems, CI/CD pipelines, and container orchestration.
+  </p>
+  <div class="hero-cta">
+    <a href="#projects" class="btn btn-primary">View Projects</a>
+    <a href="#contact"  class="btn btn-outline">Get In Touch</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-item">
+      <span class="stat-num" data-target="2.6">0</span>
+      <span class="stat-label">Years Experience</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="10">0</span>
+      <span class="stat-label">Projects Done</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="7">0</span>
+      <span class="stat-label">Core Skills</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT ═════════════════════════════════════════════ -->
+<section id="about">
+  <div class="reveal">
+    <p class="section-tag">// who i am</p>
+    <h2 class="section-title">About Me</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="about-grid reveal">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:1.5rem;">
+      <div class="about-avatar">
+  <img src="img1.jpg" alt="Astha" />
+</div>
+      <div class="about-tags">
+        <span class="tag">AWS </span>
+        <span class="tag">DevOps</span>
+        <span class="tag">Windows Active-Directory</span>
+        <span class="tag">Linux</span>
+        <span class="tag">Security</span>
+        <span class="tag">Git</span>
+        <span class="tag">Scipts</span>
+        <span class="tag">Testing</span>
+        <span class="tag">Open Source</span>
+      </div>
+    </div>
+    <div class="about-text">
+      <p>DevOps-focused Engineer with strong hands-on experience in building, automating, and deploying scalable cloud-native applications on AWS. Proven capability in designing end-to-end CI/CD pipelines, containerizing workloads using Docker, and orchestrating deployments with Kubernetes (AWS EKS).</p>
+      <p>Delivered production-grade CI/CD pipelines using AWS CodePipeline, Amazon ECR, Amazon ECS, and GitHub Actions—enabling fully automated, consistent, and zero-touch deployments across environments.
+Experienced in infrastructure provisioning and application deployment on AWS, including EC2-based hosting, S3 static website deployment, and containerized application delivery. Strong understanding of deployment lifecycles, version control integration, and release automation.</p>
+<p>Brings foundational experience in system administration, patch management (SCCM), and Active Directory, ensuring stable and production-ready environments that support DevOps workflows.</p>
+<p>Applies a DevSecOps mindset by integrating security checks, compliance validation, and system hardening into CI/CD pipelines—ensuring secure and reliable releases without compromising speed.</p>
+</div>
+  </div>
+</section>
+
+<!-- ═══ SKILLS ════════════════════════════════════════════ -->
+<section id="skills">
+  <div class="reveal">
+    <p class="section-tag">// what i know</p>
+    <h2 class="section-title">Skills</h2>
+    <div class="divider"></div>
+  </div>
+  <!-- Cards injected by script.js using data.js -->
+  <div class="skills-grid" id="skillsGrid"></div>
+</section>
+
+<!-- ═══ PROJECTS ══════════════════════════════════════════ -->
+<section id="projects">
+  <div class="reveal">
+    <p class="section-tag">// what i've built</p>
+    <h2 class="section-title">Projects</h2>
+    <div class="divider"></div>
+  </div>
+  <!-- Cards injected by script.js using data.js -->
+  <div class="projects-grid" id="projectsGrid"></div>
+</section>
+
+<!-- ═══ ARTICLES ══════════════════════════════════════════ -->
+<section id="article">
+  <div class="reveal">
+    <p class="section-tag">// my writing</p>
+    <h2 class="section-title">Articles</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="reveal">
+    <div class="carousel-wrap">
+      <!-- Slides injected by script.js using data.js -->
+      <div class="slides" id="carouselSlides"></div>
+      <div class="carousel-nav">
+        <button class="c-btn" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="c-btn" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </div>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══════════════════════════════════════════ -->
+<section id="contact">
+  <div class="reveal">
+    <p class="section-tag">// say hello</p>
+    <h2 class="section-title">Contact</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="contact-grid reveal">
+    <div class="contact-text">
+      <p>Open to new opportunities, collaborations, and conversations. Feel free to reach out through any of these platforms.</p>
+      <div class="comment-box">
+        <p class="section-tag" style="margin-bottom:.8rem;">// leave a message</p>
+        <textarea id="commentInput" placeholder="Write a comment or feedback..."></textarea>
+        <br><br>
+        <button class="btn btn-primary" onclick="submitComment()">Submit Feedback</button>
+        <div id="comment-list"></div>
+      </div>
+    </div>
+    <!-- Social links injected by script.js using data.js -->
+    <div class="social-links" id="socialLinks"></div>
+  </div>
+</section>
+
+<!-- ═══ REGISTER ══════════════════════════════════════════ -->
+<section id="register">
+  <div class="reveal">
+    <p class="section-tag">// join the community</p>
+    <h2 class="section-title">Register</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="form-card reveal">
+
+    <div class="form-row">
+      <label>USERNAME</label>
+      <input type="text" id="regName" placeholder="Enter your name" />
+    </div>
+
+    <div class="form-row">
+      <label>PROFESSION</label>
+      <input type="text" id="regProfession" placeholder="e.g. DevOps Engineer" />
+    </div>
+
+    <div class="form-row">
+      <label>COUNTRY</label>
+      <select id="regCountry">
+        <option value="">Select country</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="UK">United Kingdom</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+      <label>SUGGESTION</label>
+      <textarea id="regSuggestion" rows="3"
+        placeholder="Any feedback or suggestions..."
+        style="width:100%;padding:.75rem 1rem;background:var(--bg);border:1px solid var(--border);
+               border-radius:8px;color:var(--text);font-family:var(--font-mono);
+               font-size:.9rem;outline:none;resize:vertical;transition:border-color .2s;"
+        onfocus="this.style.borderColor='var(--accent)'"
+        onblur="this.style.borderColor='var(--border)'">
+      </textarea>
+    </div>
+
+    <div class="form-actions">
+      <button class="btn btn-primary" onclick="submitForm()">Submit</button>
+      <button class="btn btn-outline"  onclick="resetForm()">Reset</button>
+    </div>
+    <p id="formMsg" style="margin-top:1rem;font-size:.85rem;display:none;"></p>
+
+  </div>
+</section>
+<!-- ═══ FOOTER ════════════════════════════════════════════ -->
+<footer>
+  <p>&copy; 2026 <span>Astha</span> — DevOps Portfolio. Built with ❤️</p>
+</footer>
+
+<!-- Load data first, then the main script -->
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
